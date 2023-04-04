@@ -3,7 +3,7 @@
 import pandas as pd
 import numpy as np
 Header=['Age','Workclass','Final_Weight','Education','Edu_Num','Martial','Occupation','Relationship','Race','Gender','Capital_Gain','Capital_Loss','Hours_per_Work','Native_Country','Salary']
-data=pd.read_csv(r"C:\Users\Siva Shankar\Desktop\income.csv",names=Header)
+data=pd.read_csv(r"income.csv",names=Header)
 print("\n\nDATA DESCRIPTION : \n",data.describe())
 
 data.dropna(inplace=True)  #Eliminating Null Values
